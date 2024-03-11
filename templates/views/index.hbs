@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission Example</title>
+</head>
+<body>
+
+<form>
+    <input placeholder="please enter here:">
+    <button>Submit</button>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const myForm = document.querySelector('form');
+        const searchInput = document.querySelector('input');
+
+        myForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevents the form from submitting traditionally
+            const inputValue = searchInput.value;
+            console.log(inputValue);
+        });
+    });
+</script>
+
+</body>
+</html>
