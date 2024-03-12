@@ -48,7 +48,7 @@ a.use(express.static(w))
 
 a.get('', (req, res) => {
     res.render('index', {
-        name: 'shalki',
+        name: 'shalkiii',
         age: 23
     })
 })

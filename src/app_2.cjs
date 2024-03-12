@@ -19,7 +19,7 @@ const url2 = 'https://api.tvmaze.com/search/shows?q=girls'
 
 request({url: url2, json: true}, (error, response) => {
     if (error) {
-        console.log(" There is an error in second URL: TV show ")
+
     } else {
         console.log(response._events.end[1])
 
